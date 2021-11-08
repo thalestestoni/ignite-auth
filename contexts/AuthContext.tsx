@@ -59,7 +59,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
         email,
         password
       })
-  
+
       const { token, refreshToken, permissions, roles } = response.data;
 
       setCookie(undefined, 'nextauth.token', token, {
